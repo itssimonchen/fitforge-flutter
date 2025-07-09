@@ -8,10 +8,11 @@
 | -------------------- | --------------------------------------- | --------------------------------------------------- |
 | **Mobile Framework** | Flutter                                 | Cross-platform app development (iOS/Android)        |
 | **State Management** | Bloc                                    | Event-driven state management for UI/business logic |
-| **Navigation**       | `go_router` (recommended)               | Declarative routing with deep link support          |
+| **Navigation**       | `go_router`.                            | Declarative routing with deep link support          |
 | **UI Design**        | Material 3 + Custom Widgets             | Consistent, modular, and themed UI components       |
 | **Analytics**        | PostHog                                 | In-app event tracking and usage analytics           |
-| **Storage**          | Flutter Secure Storage                  | Local storage for auth/session/token caching        |
+| **Local Storage**    | Flutter Secure Storage                  | Local storage for auth/session/token caching        |
+| **Backend / BaaS**   | Supabase (supabase_flutter)	         | Provides Authentication, Realtime Database, Storage |
 | **Testing**          | `flutter_test`, `bloc_test`, `mocktail` | Unit and widget testing tools                       |
 
 ---
@@ -95,6 +96,7 @@ lib/
 │   └── login_page.dart
 ├── home/                     # Post-login dashboard or landing
 │   └── home_page.dart
+│   └── home_service.dart     
 ├── analytics/                # PostHog integration
 │   └── posthog_service.dart
 ├── widgets/                  # Shared UI components
